@@ -1,8 +1,11 @@
 import { Store } from "./stores/store.type"
 
-export type RecipeType = {
-  id: number
+export type CreateRecipeType = {
   name: string
+}
+
+export type RecipeType = CreateRecipeType & {
+  id: number
 }
 
 export class Recipe {

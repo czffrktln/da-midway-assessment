@@ -30,3 +30,13 @@ export async function details(store: Store<RecipeType[]>, args: string[]) {
     }
   }
 }
+
+export async function create(store: Store<RecipeType[]>, args: string[]) {
+  const [name] = args;
+  if (!name) {
+    console.log("You should add a recipe name");
+  } else {
+    console.log(name);
+    
+  }
+}
